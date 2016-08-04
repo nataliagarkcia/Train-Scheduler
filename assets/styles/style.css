@@ -1,0 +1,55 @@
+.jumbotron {
+	background-color: yellow;
+	font-family: 'Oswald', sans-serif;
+	text-align: center;
+	color:black;
+	margin: 0 18% 0 18%;
+
+
+}
+#train {
+	height:100px;
+
+}
+#schedule{
+	border-radius: 10px;
+	background-color: black;
+	color:white;
+	padding:10px 0 10px 20px ;
+	font-family:'helvetica';
+	font-size: 16px ;
+	font-weight: bolder;
+
+}
+
+body{
+	background-image: url("../images/back.jpg");
+	background-attachment: fixed;
+
+}
+#table-container,
+#container-form{
+	background-color: rgba(256, 256, 256, 0.8);
+	margin:30px 0 30px 0;
+
+}
+
+#runSearch{
+	margin:25px 0 25px 0;
+	background-color: black;
+	color:white;
+
+}
+
+#runSearch:hover {
+	background-color: grey;
+}
+
+#footer{
+
+	background-color: yellow;
+	padding: 30px  0 30px 0;
+	margin-top:30px;
+	text-align: center;
+	font-family: "pacifico";
+}
