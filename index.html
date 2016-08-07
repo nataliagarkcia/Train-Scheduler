@@ -6,25 +6,28 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles/reset.css">
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <!--font added-->
+    <!--fonts added-->
     <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Press+Start+2P' rel='stylesheet' type='text/css'>
    
 	<!--css linked-->
 	<link rel="stylesheet" type="text/css" href="assets/styles/style.css">
-	<!--access jquery library-->
-	<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-	<!--access the local javascript file-->
-	<script src="assets/javascript/game.js"></script>
+ 
+
+
+
+	<!--main Title of the page-->
 	<title>Train Scheduler</title>
 </head>
+
 <body>
 
 <!--contains the title of the page and is the first div-->
 <div class="jumbotron">
-	<img src="assets/images/train.png" _alt="trainlogo" id="train">
-	<h1 id="mainTitle"> Departures</h1>
+		<!--train picture that shows inside jumbotron-->
+		<img src="assets/images/train.png" _alt="trainlogo" id="train">
+			<h1 id="mainTitle"> Departures</h1>
 </div>
 
 	<div class="container-fluid">
@@ -32,17 +35,36 @@
 		<div class="row">
 		
 		<div class="col-md-2"></div>
-		<div class="col-md-8" id="table-container">
-			<h3  id="schedule">Current Train Schedule </h3>	
-			<table class="table table-condensed">
-			<tr>
+			<div class="col-md-8" id="table-container">
+				<!--title of this section-->
+				<h3  id="schedule">Current Train Schedule </h3>
+				<!--table that contents the values to be insert with javascript-->
+
+				<table class="table table-condensed">
+					<thead>
+						<tr>
+							<th>Train Name</th>
+							<th>Destination</th>
+							<th>Frecuency (min)</th>
+							<th>Next Arrival</th>
+							<th>Minutes Away</th>
 				
-			</tr>
+						</tr>
+					</thead>
+					<tbody>
+						<tr> 
+						<td>Madrigal</td>
+						<td>barcelona</td>
+						<td>20</td>
+						<td>50</td>
+						<td>6</td>
 
-  			</table>
 
-		</div>
+						</tr>
+					</tbody>
 
+  				</table>
+			</div>
 		</div>	
 
 		<div class="row">
@@ -72,8 +94,8 @@
 
 		    <!--form that with allow the user to input the first train time -->
 		   <div class="form-group">
-		    <label for="frecuency">Frecuency</label>
-		    <input type="text" class="form-control" id="frecuency" placeholder="Frecuency">
+		    <label for="frequency">Frequency</label>
+		    <input type="text" class="form-control" id="frequency" placeholder="Frequency">
 		  </div>
 
 		  <button type="submit" class="btn btn-default" id="runSearch">Submit</button>
@@ -93,4 +115,13 @@
 
 
 </body>
+	   
+	<!--access jquery library-->
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+	<!-- Moment.js Reference -->	
+ 	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+
+ 	<!--access the local javascript file-->
+	<script src="assets/javascript/train.js"></script>
 </html>
